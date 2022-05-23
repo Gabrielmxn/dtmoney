@@ -15,8 +15,6 @@ export function TransactionsTable(){
   useEffect(() => {
     api.get('/transactions')
     .then(response => setTransactions(response.data.transactions));
-
-    console.log(transactions)
   }, []);
 
   return (
